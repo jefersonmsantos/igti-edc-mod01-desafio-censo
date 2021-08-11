@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda" {
-    name = "IGTILambdaRole"
+    name = "IGTILambdaRoleDesafio"
 
     assume_role_policy = <<EOF
 {
