@@ -1,7 +1,9 @@
+from re import I
 import boto3
 import urllib3
 import zipfile
 from io import BytesIO
+import gc
 
 #Criar cliente para interagir com S3
 s3 = boto3.resource('s3')
@@ -33,6 +35,10 @@ def handler(event, context):
                             s3.meta.client.upload_fileobj(BytesIO(filebytes), 'datalake-igti-mod01-desafio', Key = "raw-data/"+folder + "/" + file_name)
         
                             print("Uploaded "+file_name)
+
+                        del i 
+                        del filebytes
+                        gc.collect()
 
 
 
