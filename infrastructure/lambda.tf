@@ -2,7 +2,7 @@ resource "aws_lambda_function" "download_extract" {
     filename = "lambda_function_payload.zip"
     function_name = var.lambda_function_name
     role = aws_iam_role.lambda.arn 
-    handler = "lambda_function.handler"
+    handler = "lambda_function_download_extract.handler"
     memory_size = 6000  
     timeout = 900
 
