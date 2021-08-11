@@ -13,7 +13,7 @@ else
     echo "=============================================="
     echo "Criando o diretório "$PACKAGE"..."
     mkdir $PACKAGE
-    echo "O diretório "$PACKAGE" foi criado"
+    echo "O diretório "$PACKAGE" foi criado."
     echo "=============================================="
 fi 
 
