@@ -24,7 +24,8 @@ spark = (
         
         #file_name = obj.key.split("/")[-1]
 
-files = ['docentes_co.CSV','docentes_nordeste.CSV']
+files = ['docentes_co.CSV','docentes_nordeste.CSV','docentes_norte.CSV','docentes_sudeste.CSV','docentes_sul.CSV',
+        'escolas.CSV','gestor.CSV','matricula_co.CSV','matricula_nordeste.CSV','matricula_norte.CSV','']
 
 for f in files:
     
