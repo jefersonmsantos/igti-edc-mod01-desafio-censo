@@ -6,7 +6,7 @@ resource "aws_s3_bucket_object" "codigo_spark" {
     etag = filemd5("../etl/csv_to_parquet_job_spark.py")
 }
 
-resource "aws_s3_bucket_object" "codigo_spark" {
+resource "aws_s3_bucket_object" "bootstrap-pip" {
     bucket = aws_s3_bucket.datalake.id
     key = "emr-code/pyspark/pip_install.sh"
     acl = "private"
