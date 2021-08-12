@@ -1,0 +1,1 @@
+pip install s3fs

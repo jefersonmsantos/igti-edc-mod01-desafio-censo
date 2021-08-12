@@ -113,6 +113,13 @@ def pipeline_censo():
                         ]
                 }
             }],
+            BootstrapActions=[{
+                'Name': 'pip-install',
+                'ScriptBootstrapAction': {
+                    'Path': 's3://datalake-igti-mod01-desafio/emr-code/pyspark/pip_install.sh'
+                }
+            },
+            ],
         )
         return cluster_id["JobFlowId"]
 
