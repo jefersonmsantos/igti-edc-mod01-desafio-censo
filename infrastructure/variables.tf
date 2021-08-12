@@ -9,3 +9,11 @@ variable "airflow_subnet_id" {
 variable "lambda_function_name" {
     default = "IGTIDownloadExtract"
 }
+
+variable "key_pair_name" {
+    default = "jeferson=igti-teste2"
+}
+
+variable "airflow_subnet_id" {
+    default = "subnet-0c2d4f69"
+}
